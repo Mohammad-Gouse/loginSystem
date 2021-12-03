@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url("bg.png");
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 65px;
+    margin: 20px 100px;
+}
+
+.box h1 {
+    font-weight: 300;
+}
+
+.box {
+    width: 320px;
+    position: absolute;
+    border-radius: 50px 12px;
+    padding: 45px 10px;
+    background: rgba(247, 244, 244, 0.6);
+    text-align: center;
+}
+
+.box input[type="text"],
+.box input[type="password"],
+.box input[type="submit"] {
+    border: 0;
+    display: block;
+    background: none;
+    margin: 25px auto;
+    text-align: center;
+    border: 2px solid #16520c;
+    width: 220px;
+    outline: none;
+    border-radius: 18px;
+    padding: 10px 7px;
+}
+
+.box input[type="submit"] {
+    border: 2px solid #00c0f9;
+    width: 100px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    background: #00c0f9;
+}
+
+@media (max-width: 850px) {
+    body {
+        background: url(bg_small.png);
+    }
+
+    .box {
+        width: 220px;
+        padding: 30px 15px;
+    }
+
+    .box h1 {
+        font-size: 28px;
+    }
+
+    .box input[type="text"],
+    .box input[type="password"],
+    .box input[type="submit"] {
+        width: 150px;
+        padding: 8px 5px;
+    }
+
+    .box input[type="submit"] {
+        width: 70px;
+    }
+
+
+
+}
